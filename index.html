@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bankcol Library — Proyecto</title>
+  <meta name="description" content="UI inspirada en Frontend Practice: Bankcol" />
+  <link rel="preconnect" href="." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <a class="brand" href="#" aria-label="Inicio">
+        <img src="./assets/logo.svg" width="28" height="28" alt="" />
+        <span>Bankcol</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a class="nav__link" href="#recursos">Recursos</a>
+        <a class="nav__link" href="#accesibilidad">Accesibilidad</a>
+        <a class="nav__link" href="#comunidad">Comunidad</a>
+      </nav>
+      <div class="topbar__cta">
+        <button id="openAuth" class="btn btn--primary">Ingresar clave</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" class="shell">
+    <section id="hero" class="hero" aria-labelledby="h-title">
+      <div class="hero__content">
+        <h1 id="h-title">Biblioteca de recursos de diseño accesible</h1>
+        <p>Explora guías, herramientas y artículos curados. Interactúa con el grid usando teclado o mouse.</p>
+        <div class="hero__actions">
+          <a href="#recursos" class="btn">Ver recursos</a>
+          <button id="openAuth2" class="btn btn--outline">Autenticación</button>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <img src="./assets/wave.svg" alt="" />
+      </div>
+    </section>
+
+    <section id="recursos" class="grid-section" aria-labelledby="rec-title">
+      <h2 id="rec-title">Recursos destacados</h2>
+      <div id="grid" class="grid" role="grid" aria-describedby="grid-help">
+        <!-- 12 cards -->
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Contraste de color</h3>
+          <p>Comprueba ratios y estados hover/focus.</p>
+          <span class="tag">Herramienta</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Patrones de teclado</h3>
+          <p>Navegación accesible con flechas.</p>
+          <span class="tag">Guía</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Componentes ARIA</h3>
+          <p>Roles, estados y propiedades.</p>
+          <span class="tag">Referencia</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Formularios</h3>
+          <p>Etiquetas, errores y ayudas.</p>
+          <span class="tag">Artículo</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Motion seguro</h3>
+          <p>Reduce mareo con media queries.</p>
+          <span class="tag">Guía</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Iconografía</h3>
+          <p>Semántica y alternativas de texto.</p>
+          <span class="tag">Checklist</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Lectores de pantalla</h3>
+          <p>Pruebas rápidas multi-navegador.</p>
+          <span class="tag">Testing</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Tokens de diseño</h3>
+          <p>Escalas de color y tipografía.</p>
+          <span class="tag">Sistema</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Layout fluido</h3>
+          <p>Grids, container queries.</p>
+          <span class="tag">Guía</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Estados UI</h3>
+          <p>Hover, focus, pressed, disabled.</p>
+          <span class="tag">Referencia</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Contenido claro</h3>
+          <p>Lecturabilidad y jerarquía.</p>
+          <span class="tag">Artículo</span>
+        </div>
+        <div class="card" role="gridcell" tabindex="0">
+          <h3>Performance</h3>
+          <p>Core Web Vitals.</p>
+          <span class="tag">Mejor práctica</span>
+        </div>
+      </div>
+      <p id="grid-help" class="muted">Usa flechas para moverte por el grid cuando una tarjeta tenga foco.</p>
+    </section>
+
+    <section id="accesibilidad" class="info">
+      <h2>Accesibilidad</h2>
+      <p>Estructura semántica, roles ARIA, foco visible y navegación por teclado incluidos.</p>
+    </section>
+
+    <section id="comunidad" class="info">
+      <h2>Comunidad</h2>
+      <p>Comparte ideas y recursos con el equipo.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="foot-grid">
+      <section>
+        <h3>Producto</h3>
+        <ul>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Biblioteca</a></li>
+          <li><a href="#">Guías</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Compañía</h3>
+        <ul>
+          <li><a href="#">Acerca</a></li>
+          <li><a href="#">Carreras</a></li>
+          <li><a href="#">Prensa</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Licencias</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Comunidad</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="copy">© 2025 Bankcol Library. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Modal Autenticación (UI de clave banco) -->
+  <div id="auth" class="modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" hidden>
+    <div class="modal__panel">
+      <button id="closeAuth" class="modal__close" aria-label="Cerrar">×</button>
+      <h2 id="auth-title">Autenticación — Ingresa tu clave</h2>
+      <p class="muted">Usa el teclado en pantalla o tu teclado físico. PIN de 4 dígitos.</p>
+
+      <div class="pin">
+        <div class="pin__display" aria-live="polite" aria-atomic="true">
+          <span class="dot" data-i="0"></span>
+          <span class="dot" data-i="1"></span>
+          <span class="dot" data-i="2"></span>
+          <span class="dot" data-i="3"></span>
+        </div>
+
+        <div class="keypad" role="group" aria-label="Teclado numérico">
+          <button class="key" data-key="1">1</button>
+          <button class="key" data-key="2">2</button>
+          <button class="key" data-key="3">3</button>
+          <button class="key" data-key="4">4</button>
+          <button class="key" data-key="5">5</button>
+          <button class="key" data-key="6">6</button>
+          <button class="key" data-key="7">7</button>
+          <button class="key" data-key="8">8</button>
+          <button class="key" data-key="9">9</button>
+          <button class="key action" data-action="clear">Borrar</button>
+          <button class="key" data-key="0">0</button>
+          <button class="key action" data-action="enter">Ingresar</button>
+        </div>
+
+        <p class="hint">Intentos restantes: <span id="tries">3</span></p>
+        <p id="message" class="message" role="alert" aria-live="assertive"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
